@@ -30,7 +30,7 @@ def can_be_created_in_a_block(args = __)
 
   Movie.create do |m|
     if movie.title
-      movie.title = title:
+      movie.title
     else movie.title = "Home Alone"
     if movie.release_date
     else movie.release_date = "1990"

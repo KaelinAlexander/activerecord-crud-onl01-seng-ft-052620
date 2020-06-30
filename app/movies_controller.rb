@@ -40,6 +40,7 @@ end
 
 def can_get_the_last_item_in_the_database
   sql = SELECT * FROM movies ORDER BY id DESC LIMIT 1
+  DB[:conn].execute(sql)
 end
 
 def can_get_size_of_the_database

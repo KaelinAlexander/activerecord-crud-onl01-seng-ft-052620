@@ -34,17 +34,17 @@ def can_be_created_in_a_block(args = __)
 end
 
 def can_get_the_first_item_in_the_database
-  sql = SELECT * FROM movies WHERE id = 1
+  sql = "SELECT * FROM movies WHERE id = 1"
   DB[:conn].execute(sql)
 end
 
 def can_get_the_last_item_in_the_database
-  sql = SELECT * FROM movies ORDER BY id DESC LIMIT 1
+  sql = "SELECT * FROM movies ORDER BY id DESC LIMIT 1"
   DB[:conn].execute(sql)
 end
 
 def can_get_size_of_the_database
-  sql = SELECT COUNT(id) FROM movies
+  sql = "SELECT COUNT(id) FROM movies"
   DB[:conn].execute(sql)
 end
 

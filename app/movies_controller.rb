@@ -34,8 +34,7 @@ def can_be_created_in_a_block(args = __)
 end
 
 def can_get_the_first_item_in_the_database
-  sql = "SELECT * FROM movies WHERE id = 1"
-  DB[:conn].execute(sql)
+  movie = Movie.first
 end
 
 def can_get_the_last_item_in_the_database

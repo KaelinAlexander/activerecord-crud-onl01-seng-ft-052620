@@ -33,6 +33,7 @@ def can_be_created_in_a_block(args = __)
       movie.title
     else movie.title = "Home Alone"
     if movie.release_date
+      movie.release_date
     else movie.release_date = "1990"
   end
 end
